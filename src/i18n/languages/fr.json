@@ -1,5 +1,7 @@
 {
-  "home": {
-    "title": "Dépôt par défaut pour les projets front GTR Suite."
+  "translations": {
+    "first": "Je voudrais que cette phrase s'affiche en Français ou en Anglais.",
+    "second": "Tout le monde sait qu'il y a {hours} heures dans une journée.",
+    "third": "Il n'y a aucun résultat | Il y a un seul résultat | Il y a {nbResults} résultats"
   }
 }

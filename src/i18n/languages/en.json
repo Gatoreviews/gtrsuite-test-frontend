@@ -1,5 +1,7 @@
 {
-  "home": {
-    "title": "Default repository for GTR Suite front projects."
+  "translations": {
+    "first": "I would like this sentence to be displayed in French or in English.",
+    "second": "Everyone knows that there are {hours} hours in a day.",
+    "third": "There is no result | There is only one result | There are {nbResults} results"
   }
 }

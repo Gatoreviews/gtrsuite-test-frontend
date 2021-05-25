@@ -1,9 +1,9 @@
 <template>
-  <v-app>
+  <v-app class="app">
     <TopBar @toggleDrawer="toggleDrawer" />
     <Navigation :drawer="drawer" @toggleDrawer="toggleDrawer" />
     <v-main>
-      <v-container fluid class="pa-4 pa-sm-6">
+      <v-container fluid class="pa-4 pa-sm-6 app__container">
         <router-view />
       </v-container>
     </v-main>
@@ -34,3 +34,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.app {
+  &__container {
+    height: 100%;
+  }
+}
+</style>

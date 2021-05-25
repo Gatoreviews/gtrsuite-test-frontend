@@ -11,7 +11,7 @@
     </div>
 
     <v-list nav>
-      <v-list-item exact v-for="item in items" :key="item.title" link :to="item.route">
+      <v-list-item :exact="item.exact" v-for="item in items" :key="item.title" :to="item.route">
         <v-list-item-icon class="mr-4">
           <v-icon>{{ item.icon }}</v-icon>
         </v-list-item-icon>
@@ -33,14 +33,17 @@ export default {
   },
   data: () => ({
     items: [
-      { title: 'Accueil', icon: 'mdi-home', route: { name: 'Home' } },
-      { title: 'Responsive', icon: 'mdi-responsive', route: { name: 'Responsive' } },
-      { title: 'Tableau', icon: 'mdi-table', route: { name: 'Table' } },
-      { title: 'Requête & Store', icon: 'mdi-database-clock-outline', route: { name: 'Store' } },
-      { title: 'Routing', icon: 'mdi-routes', route: { name: 'Routing' } },
-      { title: 'Google Maps', icon: 'mdi-map', route: { name: 'Gmap' } },
-      { title: 'SEO', icon: 'mdi-clipboard-pulse-outline', route: { name: 'Seo' } },
-      { title: 'Tests', icon: 'mdi-test-tube', route: { name: 'Tests' } },
+      { title: 'Accueil', icon: 'mdi-home', route: { name: 'Home' }, exact: true },
+      { title: 'Responsive', icon: 'mdi-responsive', route: { name: 'Responsive' }, exact: false },
+      { title: 'Tableau', icon: 'mdi-table', route: { name: 'Table' }, exact: false },
+      { title: 'Requête & Store', icon: 'mdi-database-clock-outline', route: { name: 'Store' }, exact: false },
+      { title: 'Routing', icon: 'mdi-routes', route: { name: 'Routing' }, exact: false },
+      { title: 'Composants', icon: 'mdi-video-input-component', route: { name: 'Components' }, exact: false },
+      { title: 'Traductions', icon: 'mdi-translate', route: { name: 'Translations' }, exact: false },
+      { title: 'Google Maps', icon: 'mdi-map', route: { name: 'Gmap' }, exact: false },
+      { title: 'SEO', icon: 'mdi-clipboard-pulse-outline', route: { name: 'Seo' }, exact: false },
+      { title: 'Tests', icon: 'mdi-test-tube', route: { name: 'Tests' }, exact: false },
+      { title: 'Git', icon: 'mdi-git', route: { name: 'Git' }, exact: false },
     ],
     right: null,
   }),
