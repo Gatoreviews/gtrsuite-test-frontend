@@ -3,7 +3,7 @@
     <div class="components-sub-component__title font-weight-bold text-subtitle-1 mb-4">Sous Composant</div>
     <div class="mb-12">
       <div>
-        La valeur du champ du composant princiaple doit s'afficher ici :
+        La valeur du champ du composant principal doit s'afficher ici :
         <strong><!-- Renseigner la valeur ici --></strong>
       </div>
       <v-divider class="my-6" />
